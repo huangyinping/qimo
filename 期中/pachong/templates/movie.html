@@ -1,0 +1,34 @@
+<link href="/static/fenye/img.css" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <title>豆瓣电影</title>
+        <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">  
+    </head>
+    <body>
+        <div >
+            {% for i in list %}
+                <div style="margin-top:50px;margin-left: 150px;width: 1000px"> 
+                    <div class="div"><img src={{ i.mFile}} /></div>                
+                    <div style="padding-left: 35px; width: 800px;margin-top: 50px">    
+                        <p style="color:blue;font-size:20px"><b>{{ i.mTitle }}{{ i.mNative }}{{ i.mNickname }}</b></p><br>
+                        <h4>
+                            导演:{{ i.mDirecors }}&nbsp;&nbsp;主演:{{ i.mActors }}<br><br>
+                            {{ i.mTime }}/{{ i.mCountry}}/{{ i.mType }}<br><br>
+                            {{ i.mPoint }}&nbsp;&nbsp;{{ i.mComment }}<br>
+                        </h4>
+                        
+                    </div>
+                       
+                </div>                
+            {% endfor %}
+        </div>
+    </body>
+</html>

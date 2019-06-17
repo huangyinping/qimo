@@ -1,0 +1,3 @@
+pachong是django项目
+数据库是数据库数据
+python是运行文件

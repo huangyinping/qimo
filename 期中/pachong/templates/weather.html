@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <title>天气预报</title>
+        <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">  
+    </head>
+    <body>
+        <div>
+            <table style="width: 60%;height: 80%;margin-left: 350px;margin-top: 50px">
+                <thead style="background-color:#B0C4DE;font-size: 35px;">
+                    <tr>
+                        <th>城市</th>
+                        <th>日期</th>
+                        <th>天气</th>
+                        <th>温度</th>
+                    </tr>
+                </thead>
+                <tbody style="font-size:25px;background-color:#F0F8FF">
+                {% for line in lists %}
+                    <tr>
+                        <td>{{ line.city }}</td>
+                        <td>{{ line.date }}</td>
+                        <td>{{ line.weather }}</td>
+                        <td>{{ line.temp }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

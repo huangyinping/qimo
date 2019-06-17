@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <title>淘宝书包</title>
+        <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">  
+    </head>
+    <body>
+        <div style="line-height: 20px" >
+            <h1 style="text-align:center">淘宝书包信息</h1>
+            {% for i in lists %}               
+                <div style="text-align: left;margin-top: 50px;margin-left: 550px">
+                   <h3>标题：{{ i.title }}</h3> 
+                   <h3>价格：{{ i.price }}</h3>  <br>           
+                </div>
+                
+            {% endfor %}
+        </div>
+    </body>
+</html>

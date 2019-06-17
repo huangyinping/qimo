@@ -1,0 +1,35 @@
+div.green-black {
+        padding-right: 3px; padding-left: 3px; padding-bottom: 3px; 
+        margin: 3px; padding-top: 30px; text-align: center
+    }
+    div.green-black a {
+        border: #2c2c2c 1px solid; padding-right: 5px; border-color:#2c2c2c ;
+        padding-left: 5px; 
+        padding-bottom: 2px; ; color:black; 
+        margin-left: 2px; padding-top: 2px;  text-decoration: none
+    }
+    div.green-black a:hover {
+        border-color: white;
+        color:black;
+    }
+    div.green-black a:active {
+        border:white 1px solid;
+        color:black;
+    }
+    div.green-black span.current {
+        border:white 1px solid; 
+        padding-right: 5px; 
+        padding-left: 5px;  
+        padding-bottom: 2px; 
+        color:red; MARGIN-RIGHT: 2px; 
+        padding-top: 2px; 
+    }
+    div.green-black span.disabled {
+        border:#f3f3f3 1px solid;
+        padding-right: 5px; 
+        padding-left: 5px; 
+        padding-bottom: 2px;
+        COLOR: #ccc; 
+        margin-right: 2px;
+        padding-top: 2px; 
+    }
